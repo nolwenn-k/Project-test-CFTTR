@@ -6,11 +6,13 @@
     <prolog>
         <author>Windows (TM)</author>
         <metadata>
+            <keywords>
                 <indexterm>SCSI</indexterm>
                 <indexterm>Cluster node<index-see-also>Node</index-see-also></indexterm>
                 <indexterm>Bus</indexterm>
                 <indexterm>Non-hot swappable<indexterm>Hard disk</indexterm></indexterm>
                 <indexterm>Hard disk<indexterm>Non-hot swappable</indexterm></indexterm>
+            </keywords>
         </metadata>
     </prolog>
     <taskbody>
@@ -31,10 +33,10 @@
                     Server) or Clusdisk device (for Windows 2000 Server or for Windows Server 2003)
                     and the Cluster service to Disabled. To do so, follow these steps:</cmd>
                 <substeps >
-                    <substep platform="Windows NT 4.0 server">
+                    <substep platform="Windows_NT_4.0">
                         <cmd>For Windows NT 4.0 Server:</cmd>
                         <info>
-                            <ol >
+                            <ol>
                                 <li>Click <b>Start</b>, point to <b>Settings</b>, and then click
                                         <b>Control Panel</b>.</li>
                                 <li>Double-click <b>Devices</b>.</li>
@@ -53,10 +55,10 @@
                             </ol>
                         </info>
                     </substep>
-                    <substep>
+                    <substep platform="Windows_2000 Windows_2003">
                         <cmd>For Windows 2000 Server and Windows Server 2003:</cmd>
                         <info>
-                            <ol >
+                            <ol>
                                 <li>Right-click <b>My Computer</b>, and then click
                                     <b>Manage</b>.</li>
                                 <li>In the left pane, click <b>Device Manager</b>.</li>
@@ -95,9 +97,9 @@
                         termination, click the following article numbers to view the articles in the
                         Microsoft Knowledge Base: <xref
                             href="https://support.microsoft.com/en-us/kb/101352" format="html"
-                           >101352</xref> Properly connecting SCSI devices to
+                            scope="external">101352</xref> Properly connecting SCSI devices to
                         Windows NT <xref href="https://support.microsoft.com/en-us/kb/92765"
-                            format="html" >92765</xref> Terminating a SCSI
+                            format="html" scope="external">92765</xref> Terminating a SCSI
                         Device</p>
                 </info>
             </step>
@@ -109,18 +111,18 @@
                 <cmd>Turn on node 2 of the cluster, but do not let Windows start on the second node.
                     To stop Windows from loading:</cmd>
                 <substeps>
-                    <substep platform="Windows NT 4.0 server">
+                    <substep platform="Windows_NT_4.0">
                         <cmd>For Windows NT 4.0 Server, at the <b>OS Loader</b> menu, press SPACEBAR
                             to pause the startup. When you pause the startup, you prevent Windows NT
                             from loading.</cmd>
                     </substep>
-                    <substep>
+                    <substep platform="Windows_2000">
                         <cmd>For Windows 2000 Server, when the computer first starts and you see the
                                 <b>For troubleshooting and advanced startup options for Windows
                                 2000, press F8</b> message at the bottom of the screen, press F8 to
                             pause the computer.</cmd>
                     </substep>
-                    <substep>
+                    <substep platform="Windows_2003">
                         <cmd>For Windows Server 2003, press F8 when the Power On Self Test (POST) is
                             complete. </cmd>
                     </substep>
@@ -197,7 +199,7 @@
                                 following article number to view the article in the Microsoft
                                 Knowledge Base: <xref
                                     href="https://support.microsoft.com/en-us/kb/237853"
-                                    format="html" >237853</xref> Dynamic disk
+                                    format="html" scope="external">237853</xref> Dynamic disk
                                 configuration unavailable for server cluster disk resources.</note>
                         </info>
                     </substep>
@@ -235,7 +237,7 @@
                     the Cluster service. To do so, follow the procedure outlined in steps 1a or 1b,
                     depending on your operating system, except:</cmd>
                 <substeps >
-                    <substep platform="Windows NT 4.0 server">
+                    <substep>
                         <cmd>In <b>Devices</b>, change the <b>Startup</b> value for the <b>Cluster
                                 Disk</b> device (in Windows NT 4.0 Server) or <b>Clusdisk</b> device
                             (in Windows 2000 Server or in Windows Server 2003) to
@@ -251,18 +253,18 @@
                 <cmd>Restart node 1, but do not let Windows start on the first node. To stop Windows
                     from loading:</cmd>
                 <substeps >
-                    <substep>
+                    <substep platform="Windows_NT_4.0">
                         <cmd>For Windows NT 4.0 Server, at the <b>OS Loader</b> menu, press SPACEBAR
                             to pause the startup. When you pause the startup, you prevent Windows NT
                             from loading.</cmd>
                     </substep>
-                    <substep>
+                    <substep platform="Windows_2000">
                         <cmd>For Windows 2000 Server, when the computer first starts and you see the
                                 <b>For troubleshooting and advanced startup options for Windows
                                 2000, press F8</b> message at the bottom of the screen, press F8 to
                             pause the computer.</cmd>
                     </substep>
-                    <substep>
+                    <substep platform="Windows_2003">
                         <cmd>For Windows Server 2003, press F8 when the Power On Self Test (POST) is
                             complete. </cmd>
                     </substep>
@@ -320,15 +322,15 @@
             <step>
                 <cmd>If there are no errors, let the operating system start on node 1. To do so,
                     follow the steps as appropriate for your operating system:</cmd>
-                <substeps platform="">
-                    <substep platform="Windows NT 4.0 server">
+                <substeps>
+                    <substep platform="Windows_NT_4.0">
                         <cmd>For Windows NT 4.0 Server, press SPACEBAR.</cmd>
                     </substep>
-                    <substep>
+                    <substep platform="Windows_2000">
                         <cmd>For Windows 2000 Server, use the arrow keys to select <b>Boot
                                 Normally</b>, and then press ENTER.</cmd>
                     </substep>
-                    <substep>
+                    <substep platform="Windows_2003">
                         <cmd>For Windows Server 2003, use the arrow keys to select <b>Start Windows
                                 Normally</b>, press ENTER, use the arrow keys to select the
                             operating system, and then press ENTER.</cmd>

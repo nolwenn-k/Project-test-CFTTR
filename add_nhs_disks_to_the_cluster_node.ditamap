@@ -15,8 +15,9 @@
             </vrmlist>
         </prodinfo>
     </bookmeta>
-    <chapter href="introduction.dita"/>
-    <chapter href="add_non-hot-swap_disks.dita"/>
-    <chapter href="reference.dita"/>
-    <chapter href="SCSI.dita"/>
+    <chapter href="topics/introduction.dita"/>
+    <chapter href="topics/add_non-hot-swap_disks.dita"/>
+    <chapter href="topics/reference.dita"/>
+    <chapter href="topics/SCSI.dita"/>
+    <chapter href="subjectscheme.ditamap" format="ditamap"/>
 </bookmap>
