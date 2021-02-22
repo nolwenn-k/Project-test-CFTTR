@@ -6,6 +6,6 @@
         <p>The SCSI standards define commands, protocols, electrical and optical interfaces. SCSI is
             most commonly used for harddisk drives and tape drives, but it can connect a wide range
             of other devices, including scanners and CD drives, although not all controllers can
-            handle all devices.<image href="../../../Downloads/Scsi_logo.svg" /></p>
+            handle all devices.<image href="Scsi_logo.svg" /></p>
     </glossdef>
 </glossentry>
